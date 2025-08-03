@@ -4,7 +4,7 @@ const RegisterPage = () => {
   return (
     <>
       <Header></Header>
-      <div className="px-5 py-6 md:max-w-[590px] justify-center items-center">
+      <div className="px-5 py-6 md:justify-center md:items-center flex min-h-screen">
         <AuthLayout></AuthLayout>
       </div>
     </>

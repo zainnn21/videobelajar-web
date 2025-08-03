@@ -2,7 +2,10 @@ import InputForm from "../Elements/Input/Index";
 import Button from "../Elements/Button";
 import LineOr from "../Elements/LineOr";
 import FormTitle from "../Elements/TitleForm";
+import OptionGender from "../Elements/OptionGender/Index";
 import { Link } from "react-router";
+import NoHp from "../Elements/NoHp";
+
 const FormRegister = () => {
   return (
     <>
@@ -10,7 +13,7 @@ const FormRegister = () => {
         title="Pendaftaran Akun"
         paragraph="Yuk, daftarkan akunmu sekarang juga!"
       ></FormTitle>
-      <div className="gap-3 flex flex-col">
+      <div className="gap-3 flex flex-col ">
         <InputForm
           label="Nama Lengkap"
           name="NamaLengkap"
@@ -23,6 +26,8 @@ const FormRegister = () => {
           placeholder=""
           type="email"
         ></InputForm>
+        <OptionGender label="Jenis Kelamin " name="JenisKelamin"></OptionGender>
+        <NoHp label="No. Hp " name="nohp" placeholder="" type="text"></NoHp>
         <InputForm
           label="Kata Sandi "
           name="password"
