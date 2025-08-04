@@ -1,34 +1,42 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import FlagIndonesia from "../../../assets/Indonesia (ID).png";
+import FlagPhilippines from "../../../assets/Philippines.jpg"; // Add this image to your assets
+
+const countryOptions = [
+  { code: "+62", label: "Indonesia", flag: FlagIndonesia },
+  { code: "+63", label: "Philippines", flag: FlagPhilippines },
+];
+
 const InputNumber = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState(countryOptions[0]);
+
+  const handleSelectChange = (event) => {
+    const selectedCode = event.target.value;
+    const country = countryOptions.find((c) => c.code === selectedCode);
+    setSelectedCountry(country);
+  };
 
   return (
-    <div className="flex md:w-[157px]">
-      <button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center px-2.5 py-1 border border-solid border-[#3A35411F] rounded-md cursor-pointer w-full"
-      >
+    <div className="flex justify-center items-center">
+      <div className="bg-[#F4F5FA] border-r border-[#3A35411F] border-solid px-2.5 py-1 rounded rounded-bl-md rounded-t-md h-12 flex items-center md:w-11">
         <img
-          src={FlagIndonesia}
-          alt="Indonesia"
-          className="w-6 h-6 border-r  bg-[#F4F5FA] border-solid border-[#3A35411F]"
+          src={selectedCountry.flag}
+          alt={selectedCountry.label}
+          className="w-6 h-6"
         />
-        <span>+62</span>
-      </button>
-
-      {isOpen && (
-        <ul className="absolute z-10 w-[157px] mt-1 bg-white border rounded-md shadow-lg">
-          <li className="flex items-center gap-2 p-2 hover:bg-gray-100 cursor-pointer">
-            <img src={FlagIndonesia} alt="Indonesia" className="w-6" />
-            <span>+62</span>
-          </li>
-          <li className="flex items-center gap-2 p-2 hover:bg-gray-100 cursor-pointer">
-            <span>+63</span>
-          </li>
-        </ul>
-      )}
+      </div>
+      <select
+        name="No Hp"
+        className="rounded-md border border-solid border-[#3A35411F] md:w-28 h-12 w-19"
+        value={selectedCountry.code}
+        onChange={handleSelectChange}
+      >
+        {countryOptions.map((option) => (
+          <option key={option.code} value={option.code}>
+            {option.code}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };

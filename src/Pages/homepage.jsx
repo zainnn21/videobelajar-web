@@ -1,4 +1,5 @@
+import HomePageLayout from "../components/Layouts/HomeLayout";
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return <HomePageLayout />;
 };
 export default HomePage;

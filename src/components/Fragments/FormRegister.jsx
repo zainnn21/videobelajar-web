@@ -27,18 +27,18 @@ const FormRegister = () => {
           type="email"
         ></InputForm>
         <OptionGender label="Jenis Kelamin " name="JenisKelamin"></OptionGender>
-        <NoHp label="No. Hp " name="nohp" placeholder="" type="text"></NoHp>
+        <NoHp label="No. Hp " name="nohp" placeholder="" type="tel"></NoHp>
         <InputForm
           label="Kata Sandi "
           name="password"
           placeholder=""
-          tyoe="password"
+          type="password"
         ></InputForm>
         <InputForm
           label="Konfirmasi Kata Sandi "
           name="password"
           placeholder=""
-          tyoe="password"
+          type="password"
         ></InputForm>
         <Link
           to="#"
@@ -46,9 +46,13 @@ const FormRegister = () => {
         >
           Lupa Password?
         </Link>
-        <Button label="Masuk" bg="bg-[#3ECF4C]" textColor="text-white"></Button>
         <Button
           label="Daftar"
+          bg="bg-[#3ECF4C]"
+          textColor="text-white"
+        ></Button>
+        <Button
+          label="Masuk"
           bg="bg-[#E2FCD9CC]"
           textColor="text-[#3ECF4C]"
         ></Button>

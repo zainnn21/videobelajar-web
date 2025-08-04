@@ -1,7 +1,7 @@
 const TitleForm = (props) => {
   const { children } = props;
   return (
-    <h1 className="font-poppins font-semibold text-2xl leading-[110%] text-center text-[#222325]">
+    <h1 className="font-poppins font-semibold text-2xl leading-[110%] text-center text-[#222325] md:text-[32px]">
       {children}
     </h1>
   );

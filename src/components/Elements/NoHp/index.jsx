@@ -7,7 +7,7 @@ const NoHp = (props) => {
   return (
     <div className="flex flex-col">
       <Label htmlFor={name}>{label}</Label>
-      <div className="flex justify-between gap-6">
+      <div className="flex justify-between md:gap-6 gap-3">
         <InputNo></InputNo>
         <Input type={type} name={name} placeholder={placeholder}></Input>
       </div>

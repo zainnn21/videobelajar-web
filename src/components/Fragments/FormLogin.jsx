@@ -2,6 +2,7 @@ import InputForm from "../Elements/Input/Index";
 import Button from "../Elements/Button";
 import LineOr from "../Elements/LineOr";
 import FormTitle from "../Elements/TitleForm";
+import { Link } from "react-router";
 const FormLogin = () => {
   return (
     <>
@@ -20,14 +21,14 @@ const FormLogin = () => {
           label="Kata Sandi "
           name="password"
           placeholder=""
-          tyoe="password"
+          type="password"
         ></InputForm>
-        <a
-          href="#"
+        <Link
+          to={""}
           className="font-medium text-sm leading-[140%] tracking-[0.2px] text-[#333333AD] text-right"
         >
           Lupa Password?
-        </a>
+        </Link>
         <Button label="Masuk" bg="bg-[#3ECF4C]" textColor="text-white"></Button>
         <Button
           label="Daftar"
