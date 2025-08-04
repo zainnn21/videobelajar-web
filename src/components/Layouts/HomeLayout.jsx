@@ -5,7 +5,7 @@ const HomePageLayout = () => {
   return (
     <>
       <Header></Header>
-      <div className="flex justify-center px-[120px] py-16 gap-16">
+      <div className="flex flex-col justify-center px-30 py-16 gap-16">
         <BodyHome></BodyHome>
       </div>
     </>

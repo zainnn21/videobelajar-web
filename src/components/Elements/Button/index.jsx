@@ -14,7 +14,7 @@ const Button = (props) => {
   };
   return (
     <button
-      className={`rounded-[10px] ${border} ${bg} ${textColor} font-bold text-sm leading-[140%] tracking-[0.2px] h-[34px] md:h-[42px] flex items-center justify-center gap-2 cursor-pointer`}
+      className={`rounded-[10px] w-full  font-bold text-sm leading-[140%] tracking-[0.2px] h-9 md:h-11 flex items-center justify-center gap-2 cursor-pointer ${border} ${bg} ${textColor}`}
       onClick={handleButtonOnClick}
     >
       {label === "Masuk Dengan Google" && (
