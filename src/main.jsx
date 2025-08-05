@@ -7,16 +7,16 @@ import HomePage from "./Pages/homepage";
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
     path: "/Login",
     element: <LoginPage />,
   },
   {
     path: "/Register",
     element: <RegisterPage />,
-  },
-  {
-    path: "/Home",
-    element: <HomePage />,
   },
 ]);
 

@@ -6,7 +6,7 @@ const BackgroundImage = (props) => {
   return (
     <div
       className="w-full max-w-[1200px] px-35 pb-16 pt-20.5 rounded-[10px] bg-cover bg-no-repeat flex flex-col gap-6  items-center"
-      title={namecard}
+      aria-label={namecard}
       style={
         namecard === "topcard"
           ? {

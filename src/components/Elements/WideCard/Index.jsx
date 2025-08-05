@@ -37,17 +37,17 @@ const WideCard = (props) => {
               </p>
             </div>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="relative items-center w-full">
             <Input
               placeholder="Masukan Emailmu"
               name="email"
               type="email"
-              variant="bg-white h-10 pl-8 rounded-[10px]"
+              variant="bg-white pl-8 rounded-[10px] md:h-[58px]"
             ></Input>
             <Button
               label="Subscribe"
               bg="bg-[#FFBD3A] md:max-w-[132px]"
-              textColor="text-white md:max-w-92 text-base"
+              textColor="text-white md:max-w-92 text-base absolute right-2 top-1/2 -translate-y-1/2"
             ></Button>
           </div>
         </div>

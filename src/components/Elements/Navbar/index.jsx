@@ -1,10 +1,19 @@
 import Logo from "./logo";
+import Category from "./Category";
+import Profile from "./profile";
+import PP from "../../../assets/profile.png";
 
 const Navbar = () => {
+  const urlParam = window.location.pathname;
+  console.log(urlParam);
   return (
-    <nav className="flex items-center justify-between border-b border-t px-6 py-4 md:px-30 md:py-3 bg-white border-[#F1F1F1] border-solid border-[1px 0px 1px 0px] shadow-[#3E434A4F]">
-      <Logo></Logo>
-    </nav>
+    <>
+      <div className="flex items-center justify-between md:max-w-280 w-full">
+        <Logo></Logo>
+        {urlParam === "/" && <Category>Kategori</Category>}
+      </div>
+      {urlParam === "/" && <Profile srcprofile={PP}></Profile>}
+    </>
   );
 };
 

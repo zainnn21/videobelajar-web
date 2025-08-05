@@ -7,7 +7,7 @@ const LogoImg = (props) => {
       src={Logo}
       alt="videobelajar"
       title={titleimg}
-      className="w-42.5 h-9 md:w-51 md:h-14"
+      className="w-38 h-10.5 md:w-51 md:h-14"
     />
   );
 };
