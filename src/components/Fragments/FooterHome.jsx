@@ -42,11 +42,21 @@ const FooterHome = () => {
               onToggle={toggleKategori}
               showToggle={true}
             >
-              <li>Digital & Teknologi</li>
-              <li>Pemasaran</li>
-              <li>Manajemen Bisnis</li>
-              <li>Pengembangan Diri</li>
-              <li>Desain</li>
+              <li>
+                <a href="#">Digital & Teknologi</a>
+              </li>
+              <li>
+                <a href="#">Pemasaran</a>
+              </li>
+              <li>
+                <a href="#">Manajemen Bisnis</a>
+              </li>
+              <li>
+                <a href="#">Pengembangan Diri</a>
+              </li>
+              <li>
+                <a href="#">Desain</a>
+              </li>
             </CategoryFooter>
           </div>
           <div>
@@ -56,11 +66,21 @@ const FooterHome = () => {
               onToggle={togglePerusahaan}
               showToggle={true}
             >
-              <li>Tentang Kami</li>
-              <li>FAQ</li>
-              <li>Kebijakan Privasi</li>
-              <li>Ketentuan Layanan</li>
-              <li>Bantuan</li>
+              <li>
+                <a href="#">Tentang Kami</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Kebijakan Privasi</a>
+              </li>
+              <li>
+                <a href="#">Ketentuan Layanan</a>
+              </li>
+              <li>
+                <a href="#">Bantuan</a>
+              </li>
             </CategoryFooter>
           </div>
           <div>
@@ -70,8 +90,12 @@ const FooterHome = () => {
               onToggle={toggleKomunitas}
               showToggle={true}
             >
-              <li>Tips Sukses</li>
-              <li>Blog</li>
+              <li>
+                <a href="#">Tips Sukses</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
             </CategoryFooter>
           </div>
         </div>

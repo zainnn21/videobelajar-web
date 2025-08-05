@@ -1,7 +1,7 @@
 import WideCard from "../Elements/WideCard";
 import Title from "../Elements/TitleForm/Title";
 import Paragraph from "../Elements/TitleForm/Paragraph";
-import List from "../Elements/List";
+import CategoryTabs from "../Elements/List";
 import Card from "../Elements/Card";
 
 import Card1 from "../../assets/1.jpg";
@@ -52,13 +52,7 @@ const BodyHome = () => {
             Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!
           </Paragraph>
         </div>
-        <List>
-          <li>Semua Kelas</li>
-          <li>Pemasaran</li>
-          <li>Desain</li>
-          <li>Pengembangan Diri</li>
-          <li>Bisnis</li>
-        </List>
+        <CategoryTabs></CategoryTabs>
         <div className="flex gap-5 md:gap-6 md:flex-row flex-col">
           <Card
             source={Card1}
