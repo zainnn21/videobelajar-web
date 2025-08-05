@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const FormParagraph = (props) => {
   const { children, pvariant } = props;
   return (
@@ -7,6 +9,11 @@ const FormParagraph = (props) => {
       {children}
     </p>
   );
+};
+
+FormParagraph.propTypes = {
+  children: PropTypes.node.isRequired,
+  pvariant: PropTypes.string.isRequired,
 };
 
 export default FormParagraph;

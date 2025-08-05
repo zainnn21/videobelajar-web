@@ -75,6 +75,7 @@ const BodyHome = () => {
             rating5={EmptyRating}
             ratingdesc="3.5 (86)"
             price="Rp 300K"
+            order="md:order-0 order-2"
           ></Card>
           <Card
             source={Card2}
@@ -91,6 +92,7 @@ const BodyHome = () => {
             rating5={EmptyRating}
             ratingdesc="3.5 (86)"
             price="Rp 300K"
+            order="md:order-0 order-1"
           ></Card>
           <Card
             source={Card3}
@@ -107,9 +109,10 @@ const BodyHome = () => {
             rating5={EmptyRating}
             ratingdesc="3.5 (86)"
             price="Rp 300K"
+            order="md:order-0 order-0"
           ></Card>
         </div>
-        <div className="flex gap-6 md:flex-row flex-col">
+        <div className="flex md:gap-6 gap-5 md:flex-row flex-col">
           <Card
             source={Card4}
             texttitle="Big 4 Auditor Financial Analyst"
@@ -125,6 +128,7 @@ const BodyHome = () => {
             rating5={EmptyRating}
             ratingdesc="3.5 (86)"
             price="Rp 300K"
+            order="md:order-0 order-2"
           ></Card>
           <Card
             source={Card5}
@@ -141,6 +145,7 @@ const BodyHome = () => {
             rating5={EmptyRating}
             ratingdesc="3.5 (86)"
             price="Rp 300K"
+            order="md:order-0 order-0"
           ></Card>
           <Card
             source={Card6}
@@ -157,9 +162,10 @@ const BodyHome = () => {
             rating5={EmptyRating}
             ratingdesc="3.5 (86)"
             price="Rp 300K"
+            order="md:order-0 order-1"
           ></Card>
         </div>
-        <div className="flex gap-6 md:flex-row flex-col">
+        <div className="flex gap-5 md:gap-6 md:flex-row flex-col">
           <Card
             source={Card7}
             texttitle="Big 4 Auditor Financial Analyst"
@@ -175,6 +181,7 @@ const BodyHome = () => {
             rating5={EmptyRating}
             ratingdesc="3.5 (86)"
             price="Rp 300K"
+            order="md:order-0 order-2"
           ></Card>
           <Card
             source={Card8}
@@ -191,6 +198,7 @@ const BodyHome = () => {
             rating5={EmptyRating}
             ratingdesc="3.5 (86)"
             price="Rp 300K"
+            order="md:order-0 order-1"
           ></Card>
           <Card
             source={Card9}
@@ -207,6 +215,7 @@ const BodyHome = () => {
             rating5={EmptyRating}
             ratingdesc="3.5 (86)"
             price="Rp 300K"
+            order="md:order-0 order-0"
           ></Card>
         </div>
         <WideCard namecard="lowercard"></WideCard>

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const CardTitle = (props) => {
   const { children, name } = props;
   return (
@@ -12,6 +14,11 @@ const CardTitle = (props) => {
       {children}
     </h6>
   );
+};
+
+CardTitle.propTypes = {
+  children: PropTypes.node.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default CardTitle;

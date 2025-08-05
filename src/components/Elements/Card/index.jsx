@@ -3,6 +3,7 @@ import CardTitle from "./Title.jsx";
 import ParagraphCard from "./paragraph.jsx";
 import Profile from "./ProfileCard.jsx";
 import Stars from "./stars.jsx";
+import PropTypes from "prop-types";
 
 const Card = (props) => {
   const {
@@ -20,9 +21,12 @@ const Card = (props) => {
     rating5,
     ratingdesc,
     price,
+    order,
   } = props;
   return (
-    <div className="md:w-96 rounded-[10px] bg-white border md:p-5 p-4 flex flex-col md:gap-4 gap-2  border-[#3A35411F]">
+    <div
+      className={`md:w-96 rounded-[10px] bg-white border md:p-5 p-4 flex flex-col md:gap-4 gap-2  border-[#3A35411F] ${order}`}
+    >
       <div className="flex gap-3 md:flex-col">
         <ImageCard source={source}></ImageCard>
         <div className="flex flex-col gap-2">
@@ -61,5 +65,23 @@ const Card = (props) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  source: PropTypes.string,
+  texttitle: PropTypes.string,
+  ptitle: PropTypes.string,
+  srcprofile: PropTypes.string,
+  profilename: PropTypes.string,
+  job: PropTypes.string,
+  jobspan: PropTypes.string,
+  rating1: PropTypes.string,
+  rating2: PropTypes.string,
+  rating3: PropTypes.string,
+  rating4: PropTypes.string,
+  rating5: PropTypes.string,
+  ratingdesc: PropTypes.string,
+  price: PropTypes.string,
+  order: PropTypes.string,
 };
 export default Card;

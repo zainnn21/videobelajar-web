@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Title = (props) => {
   const { children } = props;
   return (
@@ -5,6 +7,10 @@ const Title = (props) => {
       {children}
     </h1>
   );
+};
+
+Title.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default Title;

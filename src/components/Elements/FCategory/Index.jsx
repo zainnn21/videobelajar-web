@@ -1,4 +1,5 @@
 import Title from "./title";
+import PropTypes from "prop-types";
 
 const CategoryFooter = (props) => {
   const { children, title, isOpen, onToggle, showToggle = false } = props;
@@ -30,6 +31,14 @@ const CategoryFooter = (props) => {
       </ul>
     </div>
   );
+};
+
+CategoryFooter.propTypes = {
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onToggle: PropTypes.func.isRequired,
+  showToggle: PropTypes.bool,
 };
 
 export default CategoryFooter;

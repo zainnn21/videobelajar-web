@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import GoogleImg from "../../../assets/logos_google-icon.png";
+import PropTypes from "prop-types";
 
 const Button = (props) => {
   const { label, bg, textColor, border } = props;
@@ -23,6 +24,13 @@ const Button = (props) => {
       {label}
     </button>
   );
+};
+
+Button.propTypes = {
+  label: PropTypes.string,
+  bg: PropTypes.string,
+  textColor: PropTypes.string,
+  border: PropTypes.string,
 };
 
 export default Button;

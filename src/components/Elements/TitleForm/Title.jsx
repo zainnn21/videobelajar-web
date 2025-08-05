@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const TitleForm = (props) => {
   const { children, tvariant } = props;
   return (
@@ -7,6 +9,11 @@ const TitleForm = (props) => {
       {children}
     </h1>
   );
+};
+
+TitleForm.propTypes = {
+  children: PropTypes.node.isRequired,
+  tvariant: PropTypes.string.isRequired,
 };
 
 export default TitleForm;

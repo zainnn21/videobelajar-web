@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Category = (props) => {
   const { children } = props;
   return (
@@ -5,6 +7,10 @@ const Category = (props) => {
       {children}
     </h1>
   );
+};
+
+Category.propTypes = {
+  children: PropTypes.node,
 };
 
 export default Category;

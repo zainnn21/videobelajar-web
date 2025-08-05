@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ParagraphCard = (props) => {
   const { children, name } = props;
   return (
@@ -12,6 +14,10 @@ const ParagraphCard = (props) => {
       {children}
     </p>
   );
+};
+
+ParagraphCard.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default ParagraphCard;

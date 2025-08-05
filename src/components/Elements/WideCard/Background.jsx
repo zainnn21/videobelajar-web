@@ -1,5 +1,6 @@
 import TopCard from "../../../assets/topcard.jpg";
 import LowerCard from "../../../assets/lowercard.jpg";
+import PropTypes from "prop-types";
 
 const BackgroundImage = (props) => {
   const { children, namecard } = props;
@@ -20,6 +21,11 @@ const BackgroundImage = (props) => {
       {children}
     </div>
   );
+};
+
+BackgroundImage.propTypes = {
+  children: PropTypes.node.isRequired,
+  namecard: PropTypes.string.isRequired,
 };
 
 export default BackgroundImage;

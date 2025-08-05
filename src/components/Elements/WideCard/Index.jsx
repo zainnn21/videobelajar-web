@@ -3,6 +3,7 @@ import Title from "../TitleForm/Title";
 import Paragraph from "../TitleForm/Paragraph";
 import Button from "../Button/index";
 import Input from "../Input/Input";
+import PropTypes from "prop-types";
 
 const WideCard = (props) => {
   const { title, paragraph, namecard } = props;
@@ -56,4 +57,9 @@ const WideCard = (props) => {
   );
 };
 
+WideCard.propTypes = {
+  title: PropTypes.node.isRequired,
+  paragraph: PropTypes.node.isRequired,
+  namecard: PropTypes.string.isRequired,
+};
 export default WideCard;

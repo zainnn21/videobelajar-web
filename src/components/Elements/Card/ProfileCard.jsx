@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ProfileCard = (props) => {
   const { srcprofile, name } = props;
   return (
@@ -7,6 +9,11 @@ const ProfileCard = (props) => {
       alt={name}
     />
   );
+};
+
+ProfileCard.propTypes = {
+  srcprofile: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default ProfileCard;

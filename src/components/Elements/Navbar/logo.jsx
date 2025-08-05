@@ -1,4 +1,5 @@
 import Logo from "../../../assets/Logo.png";
+import PropTypes from "prop-types";
 
 const LogoImg = (props) => {
   const { titleimg } = props;
@@ -11,5 +12,7 @@ const LogoImg = (props) => {
     />
   );
 };
+
+LogoImg.propTypes = { titleimg: PropTypes.string };
 
 export default LogoImg;

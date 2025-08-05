@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import ExitLogo from "../../../assets/exit.png";
+import PropTypes from "prop-types";
 
 const Profile = (props) => {
   const { srcprofile, variant } = props;
@@ -38,7 +39,7 @@ const Profile = (props) => {
           aria-labelledby="menu-button"
         >
           <div
-            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col md:w-50 w-full block md:hidden"
+            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex-col md:w-50 w-full block md:hidden"
             role="none"
           >
             <a
@@ -60,7 +61,7 @@ const Profile = (props) => {
             </a>
           </div>
           <div
-            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col w-50"
+            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col w-full"
             role="none"
           >
             <a
@@ -71,7 +72,7 @@ const Profile = (props) => {
             </a>
           </div>
           <div
-            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col w-50"
+            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col w-full"
             role="none"
           >
             <a
@@ -82,14 +83,14 @@ const Profile = (props) => {
             </a>
           </div>
           <div
-            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col w-50"
+            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col w-full"
             role="none"
           >
             <a
               href="#"
               className="flex font-medium text-base leading-[140%] tracking-[0.2px] text-[#FF5C2B] items-center gap-1.5"
             >
-              Keluar
+              Keluar{``}
               <img src={ExitLogo} alt="" />
             </a>
           </div>
@@ -97,6 +98,11 @@ const Profile = (props) => {
       )}
     </div>
   );
+};
+
+Profile.propTypes = {
+  srcprofile: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 export default Profile;

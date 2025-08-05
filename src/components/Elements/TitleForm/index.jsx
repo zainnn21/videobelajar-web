@@ -1,5 +1,6 @@
 import Parapgraph from "./Paragraph";
 import Title from "./Title";
+import PropTypes from "prop-types";
 
 const FormTitle = (props) => {
   const { title, paragraph } = props;
@@ -9,6 +10,11 @@ const FormTitle = (props) => {
       <Parapgraph>{paragraph}</Parapgraph>
     </div>
   );
+};
+
+FormTitle.propTypes = {
+  title: PropTypes.node.isRequired,
+  paragraph: PropTypes.node.isRequired,
 };
 
 export default FormTitle;

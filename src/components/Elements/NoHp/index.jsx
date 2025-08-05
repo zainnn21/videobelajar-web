@@ -1,6 +1,7 @@
 import Label from "../Input/Label";
 import InputNo from "./InputNo";
 import Input from "../Input/Input";
+import PropTypes from "prop-types";
 
 const NoHp = (props) => {
   const { name, label, placeholder, type } = props;
@@ -13,6 +14,13 @@ const NoHp = (props) => {
       </div>
     </div>
   );
+};
+
+NoHp.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default NoHp;
