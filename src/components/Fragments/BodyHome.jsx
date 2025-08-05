@@ -1,4 +1,4 @@
-import WideCard from "../Elements/WideCard";
+import WideCard from "../Elements/WideCard/Index";
 import Title from "../Elements/TitleForm/Title";
 import Paragraph from "../Elements/TitleForm/Paragraph";
 import CategoryTabs from "../Elements/List";
