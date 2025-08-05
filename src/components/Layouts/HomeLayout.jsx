@@ -6,7 +6,7 @@ const HomePageLayout = () => {
   return (
     <>
       <Header></Header>
-      <div className="flex flex-col justify-center px-30 py-16 gap-16 w-full items-center">
+      <div className="flex flex-col justify-center px-5 md:px-30 py-7 md:py-16 md:gap-16 gap-6 w-full items-center">
         <BodyHome></BodyHome>
       </div>
       <FooterHome></FooterHome>

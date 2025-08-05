@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
+import ExitLogo from "../../../assets/exit.png";
 
 const Profile = (props) => {
-  const { srcprofile } = props;
+  const { srcprofile, variant } = props;
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -24,20 +25,31 @@ const Profile = (props) => {
       <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
         <img
           src={srcprofile}
-          className="w-11 h-11 rounded-[10px]"
+          className={`w-11 h-11 rounded-[10px] ${variant}`}
           alt="profile"
         />
       </button>
 
       {isOpen && (
         <div
-          className="absolute top-16 right-0 rounded-br-sm rounded-bl-sm shadow-2xl bg-white  flex flex-col"
+          className="md:absolute fixed md:top-16 top-19 md:left-auto left-0 right-0 rounded-br-sm rounded-bl-sm shadow-2xl bg-white  flex flex-col md:w-50 w-full"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
         >
           <div
-            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col w-50"
+            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col md:w-50 w-full block md:hidden"
+            role="none"
+          >
+            <a
+              href="#"
+              className="font-medium text-base leading-[140%] tracking-[0.2px] text-[#333333AD]"
+            >
+              Kategori
+            </a>
+          </div>
+          <div
+            className="border-b px-3 py-4 gap-1.5 border-[#3A35411F] flex flex-col md:w-50 w-full"
             role="none"
           >
             <a
@@ -55,7 +67,7 @@ const Profile = (props) => {
               href="#"
               className="font-medium text-base leading-[140%] tracking-[0.2px] text-[#333333AD]"
             >
-              Profile Saya
+              Kelas Saya
             </a>
           </div>
           <div
@@ -75,9 +87,10 @@ const Profile = (props) => {
           >
             <a
               href="#"
-              className="font-medium text-base leading-[140%] tracking-[0.2px] text-[#FF5C2B]"
+              className="flex font-medium text-base leading-[140%] tracking-[0.2px] text-[#FF5C2B] items-center gap-1.5"
             >
               Keluar
+              <img src={ExitLogo} alt="" />
             </a>
           </div>
         </div>

@@ -17,7 +17,7 @@ const WideCard = (props) => {
         <Button
           label="Temukan Video Course untuk Dipelajari!"
           bg="bg-[#3ECF4C]"
-          textColor="text-white md:max-w-92 text-base "
+          textColor="text-white md:max-w-92 md:text-base text-sm font-normal"
         ></Button>
       )}
 
@@ -37,7 +37,7 @@ const WideCard = (props) => {
               </p>
             </div>
           </div>
-          <div className="relative items-center w-full">
+          <div className="md:relative w-full flex flex-col gap-4 ">
             <Input
               placeholder="Masukan Emailmu"
               name="email"
@@ -47,7 +47,7 @@ const WideCard = (props) => {
             <Button
               label="Subscribe"
               bg="bg-[#FFBD3A] md:max-w-[132px]"
-              textColor="text-white md:max-w-92 text-base absolute right-2 top-1/2 -translate-y-1/2"
+              textColor="text-white md:max-w-92 text-base md:absolute md:right-2 md:top-1/2 md:transform md:-translate-y-1/2 h-10"
             ></Button>
           </div>
         </div>

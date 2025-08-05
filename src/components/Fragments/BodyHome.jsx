@@ -43,8 +43,8 @@ const BodyHome = () => {
         paragraph="Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga dapat berpartisipasi dalam latihan interaktif yang akan meningkatkan pemahaman Anda."
         namecard="topcard"
       ></WideCard>
-      <div className="flex flex-col gap-8 ">
-        <div className="flex flex-col gap-3">
+      <div className="flex flex-col md:gap-8 gap-6 md:w-300 w-80 ">
+        <div className="flex flex-col md:gap-3 gap-2.5">
           <Title tvariant="text-left ">
             Koleksi Video Pembelajaran Unggulan
           </Title>
@@ -59,7 +59,7 @@ const BodyHome = () => {
           <li>Pengembangan Diri</li>
           <li>Bisnis</li>
         </List>
-        <div className="flex gap-6">
+        <div className="flex gap-5 md:gap-6 md:flex-row flex-col">
           <Card
             source={Card1}
             texttitle="Big 4 Auditor Financial Analyst"
@@ -109,7 +109,7 @@ const BodyHome = () => {
             price="Rp 300K"
           ></Card>
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 md:flex-row flex-col">
           <Card
             source={Card4}
             texttitle="Big 4 Auditor Financial Analyst"
@@ -159,7 +159,7 @@ const BodyHome = () => {
             price="Rp 300K"
           ></Card>
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 md:flex-row flex-col">
           <Card
             source={Card7}
             texttitle="Big 4 Auditor Financial Analyst"

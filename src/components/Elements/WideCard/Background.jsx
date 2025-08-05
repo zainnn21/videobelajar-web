@@ -5,7 +5,7 @@ const BackgroundImage = (props) => {
   const { children, namecard } = props;
   return (
     <div
-      className="w-full max-w-[1200px] px-35 pb-16 pt-20.5 rounded-[10px] bg-cover bg-no-repeat flex flex-col gap-6  items-center"
+      className="w-full md:max-w-[1200px] max-w-80 md:px-35 px-5 md:pb-16 md:pt-20.5 py-16 rounded-[10px] bg-cover bg-no-repeat flex flex-col gap-6  items-center bg-center"
       aria-label={namecard}
       style={
         namecard === "topcard"

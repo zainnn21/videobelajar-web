@@ -2,6 +2,7 @@ import Logo from "./logo";
 import Category from "./Category";
 import Profile from "./profile";
 import PP from "../../../assets/profile.png";
+import Line3 from "../../../assets/3line.png";
 
 const Navbar = () => {
   const urlParam = window.location.pathname;
@@ -12,7 +13,16 @@ const Navbar = () => {
         <Logo></Logo>
         {urlParam === "/" && <Category>Kategori</Category>}
       </div>
-      {urlParam === "/" && <Profile srcprofile={PP}></Profile>}
+      {urlParam === "/" && (
+        <>
+          <div className="hidden md:block">
+            <Profile srcprofile={PP}></Profile>
+          </div>
+          <div className="md:hidden">
+            <Profile srcprofile={Line3} variant="!w-6 !h-6"></Profile>
+          </div>
+        </>
+      )}
     </>
   );
 };
