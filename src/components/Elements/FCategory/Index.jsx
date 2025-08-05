@@ -1,5 +1,6 @@
 import Title from "./Title";
 import PropTypes from "prop-types";
+import RightArrow from "../../../assets/rightArrow.png";
 
 const CategoryFooter = (props) => {
   const { children, title, isOpen, onToggle, showToggle = false } = props;
@@ -14,11 +15,7 @@ const CategoryFooter = (props) => {
             className="md:hidden flex items-center justify-center w-6 h-6 transition-transform duration-200"
             style={{ transform: isOpen ? "rotate(90deg)" : "rotate(0deg)" }}
           >
-            <img
-              src="/src/assets/rightArrow.png"
-              alt="Toggle"
-              className="w-4 h-4"
-            />
+            <img src={RightArrow} alt="Toggle" className="w-6 h-6" />
           </button>
         )}
       </div>
