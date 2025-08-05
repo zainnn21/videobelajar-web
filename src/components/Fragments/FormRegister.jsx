@@ -4,7 +4,7 @@ import LineOr from "../Elements/LineOr";
 import FormTitle from "../Elements/TitleForm";
 import OptionGender from "../Elements/OptionGender/Index";
 import { Link } from "react-router";
-import NoHp from "../Elements/NoHp";
+import NoHp from "../Elements/NoHp/index";
 
 const FormRegister = () => {
   return (

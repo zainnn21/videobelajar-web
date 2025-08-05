@@ -1,7 +1,7 @@
 import InputForm from "../Elements/Input/Index";
-import Button from "../Elements/Button";
-import LineOr from "../Elements/LineOr";
-import FormTitle from "../Elements/TitleForm";
+import Button from "../Elements/Button/index";
+import LineOr from "../Elements/LineOr/index";
+import FormTitle from "../Elements/TitleForm/index";
 import { Link } from "react-router";
 const FormLogin = () => {
   return (

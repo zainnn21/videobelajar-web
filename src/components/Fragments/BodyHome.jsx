@@ -1,7 +1,7 @@
 import WideCard from "../Elements/WideCard/Index";
 import Title from "../Elements/TitleForm/Title";
 import Paragraph from "../Elements/TitleForm/Paragraph";
-import CategoryTabs from "../Elements/List";
+import CategoryTabs from "../Elements/List/index";
 import Card from "../Elements/Card";
 
 import Card1 from "../../assets/1.jpg";

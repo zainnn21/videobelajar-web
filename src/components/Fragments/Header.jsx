@@ -1,4 +1,4 @@
-import Navbar from "../Elements/Navbar";
+import Navbar from "../Elements/Navbar/index";
 
 const Header = () => {
   return (
