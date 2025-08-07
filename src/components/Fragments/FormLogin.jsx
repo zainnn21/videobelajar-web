@@ -29,11 +29,17 @@ const FormLogin = () => {
         >
           Lupa Password?
         </Link>
-        <Button label="Masuk" bg="bg-[#3ECF4C]" textColor="text-white"></Button>
+        <Button
+          label="Masuk"
+          bg="bg-[#3ECF4C]"
+          textColor="text-white"
+          typeButton="submit"
+        ></Button>
         <Button
           label="Daftar"
           bg="bg-[#E2FCD9CC]"
           textColor="text-[#3ECF4C]"
+          typeButton="button"
         ></Button>
         <LineOr></LineOr>
         <Button
@@ -42,6 +48,7 @@ const FormLogin = () => {
           textColor="text-[#4A505C]"
           border="border border-[#F1F1F1] border-solid"
           GoogleImg
+          typeButton="button"
         ></Button>
       </div>
     </>
