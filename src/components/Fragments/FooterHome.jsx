@@ -1,7 +1,7 @@
 import { useState } from "react";
 import LogoImg from "../Elements/Navbar/logo";
 import Address from "../Elements/address/index";
-import CategoryFooter from "../Elements/FCategory";
+import CategoryFooter from "../Elements/FCategory/index";
 import IconFooter from "../Elements/IconFooter/Index";
 
 const FooterHome = () => {
