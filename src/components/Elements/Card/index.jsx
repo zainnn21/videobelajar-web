@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 
 const Card = (props) => {
   const {
+    key,
     source,
     texttitle,
     ptitle,
@@ -14,11 +15,7 @@ const Card = (props) => {
     profilename,
     job,
     jobspan,
-    rating1,
-    rating2,
-    rating3,
-    rating4,
-    rating5,
+    ratingImages,
     ratingdesc,
     price,
     order,
@@ -26,6 +23,7 @@ const Card = (props) => {
   return (
     <div
       className={`md:w-96 rounded-[10px] bg-white border md:p-5 p-4 flex flex-col md:gap-4 gap-2  border-[#3A35411F] ${order}`}
+      key={key}
     >
       <div className="flex gap-3 md:flex-col">
         <ImageCard source={source}></ImageCard>
@@ -48,13 +46,7 @@ const Card = (props) => {
       </div>
       <div className="flex justify-between items-center gap-2">
         <div className="flex gap-2">
-          <Stars
-            rating1={rating1}
-            rating2={rating2}
-            rating3={rating3}
-            rating4={rating4}
-            rating5={rating5}
-          ></Stars>
+          <Stars images={ratingImages}></Stars>
           <p className="font-medium text-xs md:text-sm leading-[140%] tracking-[0.2px] text-[#333333AD] underline">
             {ratingdesc}
           </p>
@@ -68,6 +60,7 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
+  key: PropTypes.number.isRequired,
   source: PropTypes.string,
   texttitle: PropTypes.string,
   ptitle: PropTypes.string,
@@ -75,11 +68,7 @@ Card.propTypes = {
   profilename: PropTypes.string,
   job: PropTypes.string,
   jobspan: PropTypes.string,
-  rating1: PropTypes.string,
-  rating2: PropTypes.string,
-  rating3: PropTypes.string,
-  rating4: PropTypes.string,
-  rating5: PropTypes.string,
+  ratingImages: PropTypes.array,
   ratingdesc: PropTypes.string,
   price: PropTypes.string,
   order: PropTypes.string,
